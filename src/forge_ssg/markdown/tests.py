@@ -49,8 +49,6 @@ class TestTextNode(unittest.TestCase):
             "TextNode(This is a text node, text, https://example.com)", repr(node)
         )
 
-
-class TestTextNodeToHTMLNode(unittest.TestCase):
     def test_text(self):
         node = TextNode("This is a text node", TextType.TEXT)
         html_node = text_node_to_html_node(node)
@@ -233,7 +231,7 @@ class TestInlineMarkdown(unittest.TestCase):
         )
 
 
-class TestBlockMarkdown(unittest.TestCase):
+class TestMarkdownBlocks(unittest.TestCase):
     def test_markdown_to_blocks(self):
         md = """
 This is **bolded** paragraph

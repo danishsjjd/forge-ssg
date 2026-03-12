@@ -1,1 +1,2 @@
-PYTHONPATH=src python3 -m forge_ssg
+python3 src/main.py
+cd docs && python3 -m http.server 8888
